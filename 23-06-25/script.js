@@ -187,3 +187,10 @@
 
 // isLoggedIn=false
 // isLoggedIn=true?console.log("Welcome Back!"):console.log("Please log in")
+
+
+// let a=10
+// a++
+// let b=a
+// b++
+// console.log(a,b)
