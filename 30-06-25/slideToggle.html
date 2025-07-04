@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <style>
+        p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Slide Toggle</h1>
+    <h3 id="1st">Slide one</h3>
+    <p id="p1">this is the 1st slide</p>
+
+    <h3 id="2nd">Slide two</h3>
+    <p id="p2">this is the 2nd slide</p>
+
+    <script>
+        
+$(document).ready(function(){
+  $("#1st").click(function(){
+    $("#p1").slideToggle("slow");
+  });
+
+  $("#2nd").click(function()
+    {
+    $("#p2").slideToggle(3000)
+
+})
+});
+    </script>
+    
+</body>
+</html>

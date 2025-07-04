@@ -1,0 +1,11 @@
+# Ignore all node_modules across folders
+node_modules/
+**/node_modules/
+
+# Ignore build and log files
+
+*.log
+
+# Ignore environment and editor settings
+.env
+

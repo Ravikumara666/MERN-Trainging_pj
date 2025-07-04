@@ -1,0 +1,7 @@
+# Normalize all text files to LF in repo, convert to CRLF on checkout (Windows)
+* text=auto eol=lf
+
+# Optional: treat some files as binary (no conversion)
+*.png binary
+*.jpg binary
+*.pdf binary
