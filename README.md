@@ -11,6 +11,6 @@ https://mern-trainging-pj-2o4h.vercel.app/
 
 PROJECT LIVE OF 01/07/25 <br>
 TechConference (BOOTSTRAP ) LANDING Page <br>
-https://engminds.vercel.app/1-07-2025/bootstrap-project.html
+https://mern-trainging-pj.vercel.app/
 
 
