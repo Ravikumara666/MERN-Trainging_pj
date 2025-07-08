@@ -114,7 +114,7 @@ Removed `node_modules` from version tracking and added `.gitignore` to prevent u
 
 | Date       | Project                                 | Live Link |
 |------------|------------------------------------------|-----------|
-| 20-06-25   | Edtech Landing Page                     | [View](https://mern-trainging-pj.vercel.app/) |
+| 20-06-25   | Basic NATO Landing Page                     | [View](https://mern-trainging-pj.vercel.app/) |
 | 20-06-25   | Todo List (HTML, CSS, JS)               | [View](https://mern-trainging-pj-2o4h.vercel.app/) |
 | 01-07-25   | Tech Conference (Bootstrap) Landing Page | [View](https://mern-trainging-pj.vercel.app/) |
 | 04-07-25   | React To-Do List                        | [View](https://mern-trainging-pj-layq.vercel.app/) |
