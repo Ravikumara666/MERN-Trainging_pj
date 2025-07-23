@@ -8,6 +8,8 @@ import Login from './pages/Login.jsx'
 import Jobs from './pages/Jobs.jsx'
 import PostJobForm from './component/PostJobForm.jsx'
 import RecruiterDashboard from './component/RecruiterDashboard.jsx'
+import Company from './pages/Company.jsx'
+import RecruiterApplications from './component/RecruiterApplications.jsx'
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
         <Route path='/jobs' element={<Jobs/>}/>
         <Route path='/postjob' element={<PostJobForm/>}/>
         <Route path='/myposts' element={<RecruiterDashboard/>}/>
+        <Route path='/companies' element={<Company/>}/>
+        <Route path='/applicationrecived' element={<RecruiterApplications/>}/>
       </Routes>
     </BrowserRouter>
   )

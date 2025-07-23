@@ -98,15 +98,38 @@ const { jobs, loading, error } = useSelector((state) => state.jobs);
   const [hoveredCard, setHoveredCard] = useState(null);
 
 
-  const handleApply = async (jobId) => {
-    if (!user) {
-      alert('Please login to apply');
-      return;
+const handleApply = async (jobId) => {
+  if (!user) {
+    alert('Please login to apply');
+    return;
+  }
+
+  try {
+    const res = await axios.post(
+      `http://localhost:3000/api/applications/apply/${jobId}`,
+      {
+        name: user.name,
+        email: user.email,
+        phone: user.phone,
+      },
+      {
+        withCredentials: true, // Send cookies (important if using session/cookie auth)
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+
+    alert('Applied successfully!');
+  } catch (error) {
+    console.error('Apply Error:', error);
+    if (error.response) {
+      alert(error.response.data.message || 'Failed to apply');
+    } else {
+      alert('Something went wrong');
     }
-    
-    // Simulate application
-    alert('Application submitted successfully! 🎉');
-  };
+  }
+};
 
   const toggleLike = (jobId) => {
     const newLikedJobs = new Set(likedJobs);

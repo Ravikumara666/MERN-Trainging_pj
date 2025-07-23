@@ -64,7 +64,9 @@ export default function NavBar() {
     );
   }
   if (role === 'recruiter') {
-    navItems.push({ path: '/postjob', label: 'Post Job', icon: PlusCircle });
+    navItems.push({ path: '/postjob', label: 'Post Job', icon: PlusCircle },
+      { path: '/applicationrecived', label: 'Applications Received', icon: PlusCircle }
+    );
   }
   if (role === 'student') {
     navItems.push({ path: '/companies', label: 'Companies', icon: Building });

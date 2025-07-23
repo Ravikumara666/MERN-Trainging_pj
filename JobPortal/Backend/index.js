@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser'
 import dotenv from 'dotenv'
 import { v2 as cloudinary } from 'cloudinary';
 import JobRouter from './routes/job.route.js'
+import ApplicationRouter from './routes/application.route.js'
 
 
 dotenv.config()
@@ -30,6 +31,7 @@ app.use(express.urlencoded({ extended: true }))
  
 app.use(logger('dev'))
 
+app.use("/api/application", ApplicationRouter);
 app.use("/api/user", router)
 app.use("/api/jobs",JobRouter)
 
